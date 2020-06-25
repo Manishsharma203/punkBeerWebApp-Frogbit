@@ -8,6 +8,9 @@ export const CHANGE_NAME='CHANGE_NAME'
 export const CHANGE_PAGENUM='CHANGE_PAGENUM'
 export const FETCH_DATA_ON_SCROLL_SUCCESS='FETCH_DATA_ON_SCROLL_SUCCESS'
 export const ADD_T0_FAV='ADD_T0_FAV'
+export const REMOVE_FAV='REMOVE_FAV'
+export const LOGIN='LOGIN'
+export const LOGOUT='LOGOUT'
 
 //actions
 export const fetchReq=query=>({
@@ -63,3 +66,17 @@ export const addToFavs=payload=>({
     type:ADD_T0_FAV,
     payload
 })
+
+export const removeFavs=payload=>({
+    type:REMOVE_FAV,
+    payload
+})
+
+export const logIn=()=>({
+    type:LOGIN
+})
+
+export const logOut=()=>({
+    type:LOGOUT
+})
+
